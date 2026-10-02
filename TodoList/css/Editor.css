@@ -1,0 +1,15 @@
+.Editor {
+  display: flex;
+  padding: 15px;
+  border: 15px solid rgb(220, 220, 220);
+  border-radius: 5px;
+}
+
+.Editor button {
+  width: 80px;
+  cursor: pointer;
+  border: none;
+  color: white;
+  background-color: rgb(37, 147, 255);
+  border-radius: 5px;
+}

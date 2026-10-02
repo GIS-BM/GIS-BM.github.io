@@ -1,0 +1,1171 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Developer Portfolio | 오현승</title>
+
+    <!-- Pretendard & Plus Jakarta Sans Web Fonts -->
+    <link
+      rel="stylesheet"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Pure Vanilla CSS Only -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- 배경 메쉬 그라디언트 레이어 -->
+    <div class="bg_mesh_layer">
+      <div class="mesh_top"></div>
+      <div class="mesh_mid"></div>
+      <div class="mesh_btm"></div>
+    </div>
+
+    <!-- 상단 스크롤 진행률 표시줄 -->
+    <div id="scroll-progress" style="width: 0%"></div>
+
+    <!-- 1. GNB 헤더 (#header) -->
+    <header id="header">
+      <div class="inner">
+        <a href="#" class="logo">
+          <span class="logo_badge"></span>
+          <span>PORTFOLIO<span class="logo_dot"></span></span>
+        </a>
+
+        <nav aria-label="메인 네비게이션">
+          <ul class="nav_menu">
+            <li><a href="#summary" class="nav_link">Summary</a></li>
+            <li><a href="#projects" class="nav_link">Projects</a></li>
+            <li><a href="#skills" class="nav_link">Skills</a></li>
+            <li><a href="#academic" class="nav_link">Academic</a></li>
+            <li><a href="#experience" class="nav_link">Experience</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- 메인 컨테이너 -->
+    <main class="main_container">
+      <!-- 2. 핵심 요약 (#summary) -->
+      <section id="summary" class="reveal" aria-labelledby="summary-heading">
+        <div class="inner">
+          <div class="summary_card">
+            <div class="decor_ring"></div>
+
+            <!-- 상태 뱃지 -->
+            <div class="status_badge">
+              <span class="pulse_dot"></span>
+              Available for Opportunities · 채용 및 프로젝트 논의 환영
+            </div>
+
+            <h1 id="summary-heading" class="headline">
+              견고한 아키텍처와 최적화를 고민하는<br />
+              <span class="highlight">소프트웨어 개발자 오현승</span>입니다.
+            </h1>
+
+            <p class="subtext">
+              내부 메커니즘을 집요하게 파악하여 장애 없는 견고한 웹 서비스를
+              설계합니다. 사용자 중심의 쾌적한 렌더링 경험과 유지보수성이 좋은
+              코드베이스 구축에 집중합니다.
+            </p>
+
+            <div class="action_wrap">
+              <button type="button" id="btn-contact-modal" class="btn_contact">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
+                  />
+                </svg>
+                커뮤니케이션 제안하기
+              </button>
+
+              <div class="social_group">
+                <a
+                  href="https://github.com/GIS-BM"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="social_btn"
+                  title="GitHub"
+                >
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="mailto:its55@naver.com"
+                  class="social_btn email_btn"
+                  title="Email"
+                >
+                  <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. 핵심 프로젝트 (#projects) -->
+      <section id="projects" class="reveal" aria-labelledby="projects-heading">
+        <div class="inner">
+          <div class="section_header">
+            <h2 id="projects-heading" class="section_title">
+              Featured Projects
+            </h2>
+            <span class="section_divider"></span>
+          </div>
+
+          <div class="project_grid">
+            <!-- Project 1: Triptalkie -->
+            <article class="project_card" data-project-id="1">
+              <div>
+                <div class="thumb">
+                  <div class="mockup_window">
+                    <div class="win_header">
+                      <div class="traffic_dots">
+                        <span class="red"></span>
+                        <span class="yellow"></span>
+                        <span class="green"></span>
+                      </div>
+                      <span class="win_tag">TRIPTALKIE · TRAVEL MATCH</span>
+                    </div>
+                    <div class="preview_grid">
+                      <div class="preview_box">
+                        <div class="box_tit">🛫 동행 모집 매칭</div>
+                        <div class="box_sub">취향 기반 신뢰 매칭</div>
+                      </div>
+                      <div class="preview_box">
+                        <div class="box_tit">📍 여행 코스 공유</div>
+                        <div class="box_sub">실시간 생생 정보 피드</div>
+                      </div>
+                    </div>
+                    <div class="win_footer">
+                      <span>Spring Boot + MyBatis</span>
+                      <span class="platform_badge">Web Platform</span>
+                    </div>
+                  </div>
+                  <span class="pill_badge">여행 동행 매칭</span>
+                </div>
+
+                <div class="body">
+                  <div class="meta_row">
+                    <span class="period">2025.08.04 ~ 2025.08.29</span>
+                    <span class="type_tag">Team Project</span>
+                  </div>
+                  <h3 class="title"><a href="#">Triptalkie</a></h3>
+                  <p class="desc">
+                    여행 취향이 맞는 동행을 구하기 어려운 문제 해결 및 신뢰할 수
+                    있는 여행 정보를 공유하는 웹 사이트
+                  </p>
+                  <div class="env_box">
+                    <div class="env_item">
+                      <span class="label">Backend:</span
+                      ><span class="val"
+                        >Java 21, Spring Boot, MyBatis, MySQL</span
+                      >
+                    </div>
+                    <div class="env_item">
+                      <span class="label">Frontend:</span
+                      ><span class="val"
+                        >Thymeleaf, JavaScript, HTML/CSS, Bootstrap 4</span
+                      >
+                    </div>
+                    <div class="env_item">
+                      <span class="label">Tools:</span
+                      ><span class="val">GitHub, Sourcetree, Jira, Notion</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="footer">
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn_project"
+                >
+                  <span>프로젝트 바로가기</span>
+                  <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </article>
+
+            <!-- Project 2: Taily -->
+            <article class="project_card card_emerald" data-project-id="2">
+              <div>
+                <div class="thumb thumb_emerald">
+                  <div class="mockup_window">
+                    <div class="win_header">
+                      <div class="traffic_dots">
+                        <span class="red"></span>
+                        <span class="yellow"></span>
+                        <span class="green"></span>
+                      </div>
+                      <span class="win_tag tag_emerald"
+                        >TAILY · PET PLATFORM</span
+                      >
+                    </div>
+                    <div class="preview_grid">
+                      <div class="preview_box">
+                        <div class="box_tit tit_emerald">🐾 일상 아카이빙</div>
+                        <div class="box_sub">반려동물 성장 다이어리</div>
+                      </div>
+                      <div class="preview_box">
+                        <div class="box_tit tit_emerald">
+                          🗺️ 산책로 & 커뮤니티
+                        </div>
+                        <div class="box_sub">Kakao Map 동네 케어</div>
+                      </div>
+                    </div>
+                    <div class="win_footer">
+                      <span>React + Spring Boot + JPA</span>
+                      <span class="platform_badge badge_emerald"
+                        >Integrated Platform</span
+                      >
+                    </div>
+                  </div>
+                  <span class="pill_badge pill_emerald"
+                    >반려동물 케어 & 커뮤니티</span
+                  >
+                </div>
+
+                <div class="body">
+                  <div class="meta_row">
+                    <span class="period period_emerald"
+                      >2025.09.15 ~ 2025.10.24</span
+                    >
+                    <span class="type_tag">Team Project</span>
+                  </div>
+                  <h3 class="title"><a href="#">Taily</a></h3>
+                  <p class="desc">
+                    반려동물과의 일상을 기록하고, 산책 경로 공유와 동네 기반
+                    커뮤니티를 통해 건강한 반려 문화를 만드는 통합 플랫폼
+                  </p>
+                  <div class="env_box">
+                    <div class="env_item">
+                      <span class="label">Frontend:</span
+                      ><span class="val"
+                        >React, Axios, Figma, VS Code, HTML, CSS, JS</span
+                      >
+                    </div>
+                    <div class="env_item">
+                      <span class="label">Backend:</span
+                      ><span class="val"
+                        >Spring Boot, Spring Security, MySQL, JPA, Lombok, Kakao
+                        Map API</span
+                      >
+                    </div>
+                    <div class="env_item">
+                      <span class="label">Tool:</span
+                      ><span class="val">GitHub, Jira, Notion, Sourcetree</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="footer">
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn_project"
+                >
+                  <span>프로젝트 바로가기</span>
+                  <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </article>
+
+            <!-- Project 3: TodoList -->
+            <article class="project_card" data-project-id="3">
+              <div>
+                <div class="thumb">
+                  <div class="mockup_window">
+                    <div class="win_header">
+                      <div class="traffic_dots">
+                        <span class="red"></span>
+                        <span class="yellow"></span>
+                        <span class="green"></span>
+                      </div>
+                      <span class="win_tag">TODOLIST · TASK MANAGER</span>
+                    </div>
+                    <div class="preview_grid">
+                      <div class="preview_box">
+                        <div class="box_tit">📝 할 일 상태 관리</div>
+                        <div class="box_sub">CRUD & 진행률 필터링</div>
+                      </div>
+                      <div class="preview_box">
+                        <div class="box_tit">💾 브라우저 스토리지</div>
+                        <div class="box_sub">LocalStorage 데이터 영속화</div>
+                      </div>
+                    </div>
+                    <div class="win_footer">
+                      <span>Vanilla JS + LocalStorage</span>
+                      <span class="platform_badge">Web App</span>
+                    </div>
+                  </div>
+                  <span class="pill_badge">할 일 & 일정 관리</span>
+                </div>
+
+                <div class="body">
+                  <div class="meta_row">
+                    <span class="period">2026.07.14 ~ 2026.07.18</span>
+                    <span class="type_tag">Personal Project</span>
+                  </div>
+                  <h3 class="title"><a href="#">TodoList</a></h3>
+                  <p class="desc">
+                    직관적인 인터페이스와 로컬 스토리지를 활용하여 할 일의
+                    추가·수정·삭제 및 진행 상태를 효율적으로 관리하는 웹
+                    애플리케이션
+                  </p>
+                  <div class="env_box">
+                    <div class="env_item">
+                      <span class="label">Frontend:</span
+                      ><span class="val">HTML5, CSS3, JavaScript</span>
+                    </div>
+                    <div class="env_item">
+                      <span class="label">Features:</span
+                      ><span class="val"
+                        >할 일 CRUD, 상태 검색, LocalStorage 저장</span
+                      >
+                    </div>
+                    <div class="env_item">
+                      <span class="label">Tools:</span
+                      ><span class="val">GitHub, VS Code</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="footer">
+                <a
+                  href="https://gis-bm.github.io/GIS-BM/TodoList/index.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn_project"
+                >
+                  <span>프로젝트 바로가기</span>
+                  <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </article>
+
+            <!-- Project 4: my fruits Shop -->
+            <article class="project_card card_emerald" data-project-id="4">
+              <div>
+                <div class="thumb thumb_emerald">
+                  <div class="mockup_window">
+                    <div class="win_header">
+                      <div class="traffic_dots">
+                        <span class="red"></span>
+                        <span class="yellow"></span>
+                        <span class="green"></span>
+                      </div>
+                      <span class="win_tag tag_emerald"
+                        >FRUITS SHOP · E-COMMERCE</span
+                      >
+                    </div>
+                    <div class="preview_grid">
+                      <div class="preview_box">
+                        <div class="box_tit tit_emerald">
+                          🍎 신선 과일 카탈로그
+                        </div>
+                        <div class="box_sub">반응형 그리드 상품 전시</div>
+                      </div>
+                      <div class="preview_box">
+                        <div class="box_tit tit_emerald">
+                          🛒 장바구니 & 결제 UI
+                        </div>
+                        <div class="box_sub">실시간 수량 및 금액 산출</div>
+                      </div>
+                    </div>
+                    <div class="win_footer">
+                      <span>HTML5 + CSS3 + JS</span>
+                      <span class="platform_badge badge_emerald"
+                        >Shopping Mall</span
+                      >
+                    </div>
+                  </div>
+                  <span class="pill_badge pill_emerald"
+                    >과일 쇼핑몰 플랫폼</span
+                  >
+                </div>
+
+                <div class="body">
+                  <div class="meta_row">
+                    <span class="period period_emerald"
+                      >2026.07.21 ~ 2026.07.25</span
+                    >
+                    <span class="type_tag">Personal Project</span>
+                  </div>
+                  <h3 class="title"><a href="#">my fruits Shop</a></h3>
+                  <p class="desc">
+                    신선한 제철 과일 카탈로그를 탐색하고 실시간 장바구니 담기 및
+                    결제 시뮬레이션을 제공하는 반응형 과일 쇼핑몰 웹 사이트
+                  </p>
+                  <div class="env_box">
+                    <div class="env_item">
+                      <span class="label">Frontend:</span
+                      ><span class="val">HTML5, CSS3, JavaScript</span>
+                    </div>
+                    <div class="env_item">
+                      <span class="label">Features:</span
+                      ><span class="val">---</span>
+                    </div>
+                    <div class="env_item">
+                      <span class="label">Tools:</span
+                      ><span class="val">GitHub, VS Code</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="footer">
+                <a
+                  href="https://gis-bm.github.io/GIS-BM/fruits_shop/index.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn_project"
+                >
+                  <span>프로젝트 바로가기</span>
+                  <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </article>
+
+            <!-- Project 5: KOSTA Bank -->
+            <article class="project_card" data-project-id="5">
+              <div>
+                <div class="thumb">
+                  <div class="mockup_window">
+                    <div class="win_header">
+                      <div class="traffic_dots">
+                        <span class="red"></span>
+                        <span class="yellow"></span>
+                        <span class="green"></span>
+                      </div>
+                      <span class="win_tag">KOSTA BANK · FINTECH</span>
+                    </div>
+                    <div class="preview_grid">
+                      <div class="preview_box">
+                        <div class="box_tit">🏦 계좌 개설 & 이체</div>
+                        <div class="box_sub">금융 트랜잭션 무결성 보장</div>
+                      </div>
+                      <div class="preview_box">
+                        <div class="box_tit">📊 입출금 거래 내역</div>
+                        <div class="box_sub">기간별 거래 내역 필터링</div>
+                      </div>
+                    </div>
+                    <div class="win_footer">
+                      <span>HTML5 + CSS3 + JS</span>
+                      <span class="platform_badge">Fintech System</span>
+                    </div>
+                  </div>
+                  <span class="pill_badge">인터넷 뱅킹 시스템</span>
+                </div>
+
+                <div class="body">
+                  <div class="meta_row">
+                    <span class="period">2026.07.28 ~ 2026.08.01</span>
+                    <span class="type_tag">Team Project</span>
+                  </div>
+                  <h3 class="title"><a href="#">KOSTA Bank</a></h3>
+                  <p class="desc">
+                    계좌 개설, 실시간 계좌 이체, 입출금 거래 내역 조회 및 잔액
+                    통계 관리를 안전하게 처리하는 모의 인터넷 뱅킹 웹 시스템
+                  </p>
+                  <div class="env_box">
+                    <div class="env_item">
+                      <span class="label">Frontend:</span
+                      ><span class="val">HTML5, CSS3, JavaScript</span>
+                    </div>
+                    <div class="env_item">
+                      <span class="label">Features:</span
+                      ><span class="val">---</span>
+                    </div>
+                    <div class="env_item">
+                      <span class="label">Tools:</span
+                      ><span class="val">GitHub, VS Code</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="footer">
+                <a
+                  href=https://gis-bm.github.io/GIS-BM/kostabank/index.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn_project"
+                >
+                  <span>프로젝트 바로가기</span>
+                  <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </article>
+
+            <!-- Project 6: Movie -->
+            <article class="project_card card_emerald" data-project-id="6">
+              <div>
+                <div class="thumb thumb_emerald">
+                  <div class="mockup_window">
+                    <div class="win_header">
+                      <div class="traffic_dots">
+                        <span class="red"></span>
+                        <span class="yellow"></span>
+                        <span class="green"></span>
+                      </div>
+                      <span class="win_tag tag_emerald"
+                        >MOVIE ARCHIVE · TMDB API</span
+                      >
+                    </div>
+                    <div class="preview_grid">
+                      <div class="preview_box">
+                        <div class="box_tit tit_emerald">🎬 최신 영화 랭킹</div>
+                        <div class="box_sub">실시간 박스오피스 & 인기순</div>
+                      </div>
+                      <div class="preview_box">
+                        <div class="box_tit tit_emerald">
+                          ⭐ 상세 줄거리 & 평점
+                        </div>
+                        <div class="box_sub">TMDB API 비동기 연동</div>
+                      </div>
+                    </div>
+                    <div class="win_footer">
+                      <span>JavaScript + TMDB API</span>
+                      <span class="platform_badge badge_emerald"
+                        >Media Platform</span
+                      >
+                    </div>
+                  </div>
+                  <span class="pill_badge pill_emerald"
+                    >영화 정보 & 평점 플랫폼</span
+                  >
+                </div>
+
+                <div class="body">
+                  <div class="meta_row">
+                    <span class="period period_emerald"
+                      >2026.08.11 ~ 2026.08.15</span
+                    >
+                    <span class="type_tag">Personal Project</span>
+                  </div>
+                  <h3 class="title"><a href="#">Movie</a></h3>
+                  <p class="desc">
+                    오픈 API(TMDB)를 연동하여 실시간 인기 영화 랭킹, 장르별 영화
+                    검색, 상세 줄거리 및 사용자 평점 정보를 제공하는 무비 플랫폼
+                  </p>
+                  <div class="env_box">
+                    <div class="env_item">
+                      <span class="label">Frontend:</span
+                      ><span class="val">HTML5, CSS3, JavaScript</span>
+                    </div>
+                    <div class="env_item">
+                      <span class="label">Features:</span
+                      ><span class="val">---</span>
+                    </div>
+                    <div class="env_item">
+                      <span class="label">Tools:</span
+                      ><span class="val">GitHub, VS Code</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="footer">
+                <a
+                  href="https://gis-bm.github.io/GIS-BM/Movie/index.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn_project"
+                >
+                  <span>프로젝트 바로가기</span>
+                  <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. 기술 스택 (#skills) - 19개 스킬 -->
+      <section id="skills" class="reveal" aria-labelledby="skills-heading">
+        <div class="inner">
+          <div class="section_header">
+            <h2 id="skills-heading" class="section_title">Technical Skills</h2>
+            <span class="section_divider"></span>
+          </div>
+
+          <div class="skills_card">
+            <p class="skills_intro">
+              뱃지를 클릭하시면 <strong>상세 실무 역량과 활용 경험</strong>을
+              아래 패널에서 확인하실 수 있습니다.
+            </p>
+
+            <div class="category_wrap">
+              <!-- 1) Backend & Languages -->
+              <div class="category_group">
+                <div class="cat_header">
+                  <span class="cat_bar bar_blue"></span>
+                  <h3 class="cat_title">Backend &amp; Languages</h3>
+                </div>
+                <div class="skill_grid">
+                  <div
+                    class="skill_box"
+                    id="skill-java"
+                    data-skill-desc="OOP 원칙 기반의 견고한 객체 지향 도메인 설계, 컬렉션 프레임워크(Collection Framework) 및 스트림(Stream API) 최적화"
+                  >
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+                      alt="Java 로고"
+                    />
+                    <span class="name">Java</span>
+                  </div>
+                  <div
+                    class="skill_box"
+                    id="skill-spring"
+                    data-skill-desc="Spring Boot 기반 RESTful API 아키텍처 구축, 의존성 주입(DI/IoC), AOP 트랜잭션 격리수준 관리 및 레이어드 아키텍처 설계"
+                  >
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg"
+                      alt="Spring 로고"
+                    />
+                    <span class="name">Spring</span>
+                  </div>
+                  <div
+                    class="skill_box"
+                    id="skill-c"
+                    data-skill-desc="포인터 기반 메모리 직접 할당 및 해제 제어, 하드웨어 계층 리소스 최적화 및 기본 알고리즘 구조 설계"
+                  >
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg"
+                      alt="C 로고"
+                    />
+                    <span class="name">C</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 2) Database -->
+              <div class="category_group">
+                <div class="cat_header">
+                  <span class="cat_bar bar_indigo"></span>
+                  <h3 class="cat_title">Database</h3>
+                </div>
+                <div class="skill_grid">
+                  <div
+                    class="skill_box"
+                    id="skill-mysql"
+                    data-skill-desc="관계형 데이터 모델링, 정규화, 복합 인덱스 설계를 통한 쿼리 실행 계획(EXPLAIN) 튜닝 및 트랜잭션 무결성 보장"
+                  >
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+                      alt="MySQL 로고"
+                    />
+                    <span class="name">MySQL</span>
+                  </div>
+                  <div
+                    class="skill_box"
+                    id="skill-mariadb"
+                    data-skill-desc="InnoDB 스토리지 엔진 특성 이해, 데이터베이스 사용자 권한 제어 및 고가용성 복제(Replication) 구성"
+                  >
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mariadb/mariadb-original.svg"
+                      alt="MariaDB 로고"
+                    />
+                    <span class="name">MariaDB</span>
+                  </div>
+                  <div
+                    class="skill_box"
+                    id="skill-oracle"
+                    data-skill-desc="엔터프라이즈 환경에서의 대용량 테이블 파티셔닝, PL/SQL 프로시저 및 시퀀스 관리, ACID 트랜잭션 보장"
+                  >
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg"
+                      alt="Oracle 로고"
+                    />
+                    <span class="name">Oracle</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 3) Cloud, DevOps & Tools -->
+              <div class="category_group">
+                <div class="cat_header">
+                  <span class="cat_bar bar_amber"></span>
+                  <h3 class="cat_title">Cloud, DevOps &amp; Tools</h3>
+                </div>
+                <div class="skill_grid">
+                  <div
+                    class="skill_box"
+                    id="skill-aws"
+                    data-skill-desc="AWS EC2 인스턴스 구축, S3 정적 자산 호스팅, IAM 역할 분리 및 보안 그룹(Security Group) 네트워크 구성"
+                  >
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"
+                      alt="AWS 로고"
+                    />
+                    <span class="name">AWS</span>
+                  </div>
+                  <div
+                    class="skill_box"
+                    id="skill-amplify"
+                    data-skill-desc="AWS Amplify를 활용한 프론트엔드 자동 CI/CD 배포 파이프라인, 커스텀 도메인 SSL 연결 및 백엔드 서비스 연동"
+                  >
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                      <path
+                        d="M10.8 3.5L0 20.5h4.6l8.1-12.7 3.7 5.8-2.3 3.6H9.4l2.8-4.4L10.8 3.5zm3.8 7.3l1.8 2.8 4-6.2 3.6 5.6h-4l-1.8-2.8-1.8 2.8h-3.6l1.8-2.2z"
+                      />
+                    </svg>
+                    <span class="name">Amplify</span>
+                  </div>
+                  <div
+                    class="skill_box"
+                    id="skill-linux"
+                    data-skill-desc="Linux(Ubuntu) 터미널 환경 운용, 프로세스 모니터링(top, ps), 파일 권한(chmod/chown) 및 패키지 관리"
+                  >
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg"
+                      alt="Linux 로고"
+                    />
+                    <span class="name">Linux</span>
+                  </div>
+                  <div
+                    class="skill_box"
+                    id="skill-bash"
+                    data-skill-desc="반복 작업 자동화 쉘 스크립트(.sh) 작성, 환경 변수(.env) 주입 및 표준 입출력 파이프라인 제어"
+                  >
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg"
+                      alt="Bash 로고"
+                    />
+                    <span class="name">Bash</span>
+                  </div>
+                  <div
+                    class="skill_box"
+                    id="skill-git"
+                    data-skill-desc="Git-flow 브랜치 전략 기반 협업, 충돌(Conflict) 해결, Rebase 및 커밋 컨벤션 준수"
+                  >
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+                      alt="Git 로고"
+                    />
+                    <span class="name">Git</span>
+                  </div>
+                  <div
+                    class="skill_box"
+                    id="skill-postman"
+                    data-skill-desc="REST API 엔드포인트 자동화 테스트 환경 구성, Mock 서버 시뮬레이션 및 API 규격 문서화 협업"
+                  >
+                    <img
+                      src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg"
+                      alt="Postman 로고"
+                    />
+                    <span class="name">Postman</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 4) Frontend & Design -->
+              <div class="category_group">
+                <div class="cat_header">
+                  <span class="cat_bar bar_emerald"></span>
+                  <h3 class="cat_title">Frontend &amp; Design</h3>
+                </div>
+                <div class="skill_grid">
+                  <div
+                    class="skill_box"
+                    id="skill-html5"
+                    data-skill-desc="W3C 웹 표준을 준수하는 시맨틱(Semantic) 마크업, WAI-ARIA 웹 접근성 및 SEO 메타데이터 엔지니어링"
+                  >
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                      alt="HTML5 로고"
+                    />
+                    <span class="name">HTML5</span>
+                  </div>
+                  <div
+                    class="skill_box"
+                    id="skill-css3"
+                    data-skill-desc="CSS3 Flexbox 및 Grid 레이아웃 완벽 구현, 반응형 미디어 쿼리, 부드러운 전환 및 키프레임 애니메이션 설계"
+                  >
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                      alt="CSS3 로고"
+                    />
+                    <span class="name">CSS3</span>
+                  </div>
+                  <div
+                    class="skill_box"
+                    id="skill-javascript"
+                    data-skill-desc="ES6+ 모던 문법, 이벤트 루프와 비동기(Promise/Async-Await) 제어, DOM 조작 최적화"
+                  >
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                      alt="JavaScript 로고"
+                    />
+                    <span class="name">JavaScript</span>
+                  </div>
+                  <div
+                    class="skill_box"
+                    id="skill-react"
+                    data-skill-desc="컴포넌트 주도 개발(CDD), Hooks(useState, useEffect, useMemo)를 활용한 상태 관리 및 가상 DOM 렌더링 최적화"
+                  >
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                      alt="React 로고"
+                    />
+                    <span class="name">React</span>
+                  </div>
+                  <div
+                    class="skill_box"
+                    id="skill-bootstrap"
+                    data-skill-desc="부트스트랩 그리드 시스템 및 완성형 컴포넌트 커스터마이징, 빠른 반응형 UI 프로토타이핑"
+                  >
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+                      alt="Bootstrap 로고"
+                    />
+                    <span class="name">Bootstrap</span>
+                  </div>
+                  <div
+                    class="skill_box"
+                    id="skill-tailwind"
+                    data-skill-desc="유틸리티 퍼스트 CSS를 활용한 디자인 시스템 구축, 커스텀 디자인 토큰 구성"
+                  >
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg"
+                      alt="Tailwind CSS 로고"
+                    />
+                    <span class="name">Tailwind CSS</span>
+                  </div>
+                  <div
+                    class="skill_box"
+                    id="skill-figma"
+                    data-skill-desc="디자인 시스템 컴포넌트 에셋 추출, 오토 레이아웃 기반 반응형 화면 설계 및 디자이너와의 커뮤니케이션"
+                  >
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
+                      alt="Figma 로고"
+                    />
+                    <span class="name">Figma</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 실무 역량 상세 패널 -->
+            <div id="skill-detail-panel">
+              <div class="panel_header">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+                <h4 id="panel-title">스킬을 클릭하여 실무 역량을 확인하세요</h4>
+              </div>
+              <p id="panel-desc">
+                상단의 기술 뱃지를 클릭하면 해당 기술의 구체적인 프로젝트 활용
+                역량과 아키텍처 고려 사항이 표시됩니다.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5. 학력 및 자격사항 (#academic) -->
+      <section id="academic" class="reveal" aria-labelledby="academic-heading">
+        <div class="inner">
+          <div class="section_header">
+            <h2 id="academic-heading" class="section_title">
+              Academic &amp; Qualifications
+            </h2>
+            <span class="section_divider"></span>
+          </div>
+
+          <ul class="academic_grid">
+            <li class="academic_item">
+              <div>
+                <div class="icon_wrap icon_blue">
+                  <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 14l9-5-9-5-9 5 9 5z"
+                    />
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
+                    />
+                  </svg>
+                </div>
+                <div class="item_main">정보통신학사</div>
+                <div class="item_sub">IT 학부 정보통신 전공</div>
+              </div>
+              <div class="item_footer">
+                <span>학위 취득</span>
+                <span class="item_date">2013.03 - 2019.12</span>
+              </div>
+            </li>
+
+            <li class="academic_item">
+              <div>
+                <div class="icon_wrap icon_emerald">
+                  <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
+                    />
+                  </svg>
+                </div>
+                <div class="item_main">정보처리기사</div>
+                <div class="item_sub">한국산업인력공단</div>
+              </div>
+              <div class="item_footer">
+                <span>국가기술자격</span>
+                <span class="item_date">2026.9</span>
+              </div>
+            </li>
+
+            <li class="academic_item">
+              <div>
+                <div class="icon_wrap icon_indigo">
+                  <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"
+                    />
+                  </svg>
+                </div>
+                <div class="item_main">네트워크관리사 2급</div>
+                <div class="item_sub">한국정보통신자격협회</div>
+              </div>
+              <div class="item_footer">
+                <span>국가공인자격</span>
+                <span class="item_date">2019.12</span>
+              </div>
+            </li>
+            <li class="academic_item">
+              <div>
+                <div class="icon_wrap icon_indigo">
+                  <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"
+                    />
+                  </svg>
+                </div>
+                <div class="item_main">리눅스마스터 2급</div>
+                <div class="item_sub">한국정보통신인력개발센터</div>
+              </div>
+              <div class="item_footer">
+                <span>국가공인자격</span>
+                <span class="item_date">2019.07</span>
+              </div>
+            </li>
+            <li class="academic_item">
+              <div>
+                <div class="icon_wrap icon_indigo">
+                  <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"
+                    />
+                  </svg>
+                </div>
+                <div class="item_main">1종보통운전면허</div>
+                <div class="item_sub">경찰청</div>
+              </div>
+              <div class="item_footer">
+                <span>데이터 자격</span>
+                <span class="item_date">2013.02 </span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 6. 경력 및 교육 (#experience) -->
+      <section id="experience" class="reveal" aria-labelledby="exp-heading">
+        <div class="inner">
+          <div class="section_header">
+            <h2 id="exp-heading" class="section_title">
+              Experience &amp; Education
+            </h2>
+            <span class="section_divider"></span>
+          </div>
+
+          <div class="timeline">
+            <!-- Timeline Node 1 -->
+            <div class="timeline_node">
+              <span class="node_dot active_pulse">
+                <span class="ping"></span>
+                <span class="core"></span>
+              </span>
+
+              <div class="card">
+                <div class="meta_row">
+                  <!-- <span class="date date">2026.07 - 2026.12</span> -->
+                  <span class="status_text"><span class="dot"></span></span>
+                </div>
+                <h3 class="title">KOSTA DevOps</h3>
+                <p class="desc">
+                  디자인 시스템 컴포넌트 라이브러리 모듈화 및 번들 크기 35%
+                  최적화 주도. 웹 접근성 자동 감사 엔진 구축 및 성능 병목 분석을
+                  통한 서비스 반응성 개선.
+                </p>
+              </div>
+            </div>
+
+            <!-- Timeline Node 2 -->
+            <div class="timeline_node">
+              <span class="node_dot normal_dot"></span>
+
+              <div class="card">
+                <div class="meta_row">
+                  <span class="date date_normal"></span>
+                </div>
+                <h3 class="title">KOSA MSA 백엔드</h3>
+                <p class="desc">
+                  브라우저 렌더링 파이프라인, 네트워크 HTTP/3 프로토콜 심층 분석
+                  및 바닐라 JS 기반 가상 DOM 아키텍처 및 상태 관리 시스템 설계
+                  실습 완료.
+                </p>
+              </div>
+            </div>
+            <!-- Timeline Node 2 -->
+            <div class="timeline_node">
+              <span class="node_dot normal_dot"></span>
+
+              <div class="card">
+                <div class="meta_row">
+                  <span class="date date_normal"></span>
+                </div>
+                <h3 class="title">DevOps 엔지니어</h3>
+                <p class="desc">
+                  브라우저 렌더링 파이프라인, 네트워크 HTTP/3 프로토콜 심층 분석
+                  및 바닐라 JS 기반 가상 DOM 아키텍처 및 상태 관리 시스템 설계
+                  실습 완료.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- 7. 공통 모달 (#modal-container) -->
+    <div
+      id="modal-container"
+      role="dialog"
+      aria-modal="true"
+      aria-hidden="true"
+    >
+      <div class="modal_box">
+        <div class="modal_header">
+          <h3 id="modal-title">커뮤니케이션</h3>
+          <button
+            type="button"
+            id="btn-modal-close-icon"
+            aria-label="모달 닫기"
+          >
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </button>
+        </div>
+        <div id="modal-content">
+          연락처: contact@domain.dev<br />편하신 채널로 연락 주시면 24시간 내
+          성심성의껏 회신드리겠습니다.
+        </div>
+        <button type="button" id="btn-modal-close">확인 및 닫기</button>
+      </div>
+    </div>
+
+    <!-- Pure Vanilla JS -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
